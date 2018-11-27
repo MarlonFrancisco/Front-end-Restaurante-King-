@@ -1,0 +1,11 @@
+option {
+	position: relative;
+	outline: none;
+	background: none !important;
+	font-weight: 700;
+}
+
+#pedido {
+	color: #e1dbdb;
+	font-weight: 700;
+}

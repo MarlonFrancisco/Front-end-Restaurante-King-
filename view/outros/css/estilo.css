@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+body {
+	height: 100vh;
+	font-family: sans-serif;
+}
+
+header {
+	background: none;
+}
+
+#nav-custom {
+	position: fixed;
+	top: -100px;
+	z-index: 5;
+	width: 100%;
+	transition: .5s;
+	background: #fff;
+}
+
+
+.navbar-brand {
+	color: #000;
+}
+
+li.nav-item {
+	padding: 10px;
+}
+section#paralax_1 {
+	height: 100%;
+	background: url("../image/paralax1.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+section#paralax_2 {
+	height: 100%;
+	background: url("../image/paralax2.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+section#paralax_3 {
+	height: 100%;
+	background: url("../image/paralax3.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+section#paralax_4 {
+	height: 100%;
+	background: url("../image/paralax4.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+section#paralax_5 {
+	height: 100%;
+	background: url("../image/paralax5.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+section#paralax_6 {
+	height: 100%;
+	background: url("../image/paralax6.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+div.sobre {
+	position: relative;
+	background: #fff;
+	z-index: 1;
+}
+
+div.sobre::before {
+	content: "";
+	position: absolute;
+	top: -80px;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	background: #fff;
+	z-index: 0;
+	transform: skewY(5deg);
+}
+
+div.sobre::after {
+	content: "";
+	position: absolute;
+	bottom: -80px;
+	right: 0;
+	width: 100%;
+	height: 200px;
+	background: #fff;
+	z-index: -1;
+	transform: skewY(-5deg);
+}
+
+div#cabecalho::after {
+	content: "";
+	position: absolute;
+	bottom: -30px;
+	right: 0;
+	width: 100%;
+	height: 200px;
+	background: #fff;
+	z-index: -1;
+	transform: skewY(-10deg);
+}
+
+p.subtitle {
+	text-align: justify;
+	font-weight: 600;
+	color: #e0dada;
+}
+
+p.title {
+	font-size: 26px;
+	color: #b5b5b5;
+}
+
+.form-custom {
+	border: none;
+	outline: none;
+	display: block;
+	border-bottom: 2px solid #e0dada;
+	width: 100%;
+	position: relative;
+	top: -30px;
+	transition: .5s;
+	background: none;
+	padding-left: 20px;
+}
+
+.form-custom:valid {
+	top: 0;
+} 
+
+.btn-custom {
+	background: #e0dada;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+.btn-custom:focus {
+	outline: none;
+	box-shadow: unset;
+}
+
+label {
+	color: #e0dada;
+	font-weight: 700;
+	padding-left: 20px;
+}
+
+.resize {
+	width: 100%;
+}
+
+.move_bottom {
+	position: relative;
+	bottom: -120px;
+}
+
+.flex-column {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-link {
+	color: #e0dada;
+	font-weight: 700;
+	transition: .5s;
+	position: relative;
+	left: 0;
+	border-radius: 5px;
+}
+
+.nav-link:hover {
+	left: 10px;
+	color: #fff;
+	background: rgba(0, 0, 0,0.1);
+}
+
+.galeria {
+	width: 100%;
+	border: 5px solid #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0,0.1);
+}
+
+.galeria > img {
+	width: 100%;
+}
+.surgir {
+	position: relative;
+	transition: .5s;
+	top: 0;
+	opacity: 1;
+}
+
+.remover {
+	position: relative;
+	transition: .5s;
+	top: 40px;
+	opacity: 0;
+}
+
+.contatos {
+	cursor: pointer;
+}
+
+.galeria1 {
+	width: 400px;
+	border: 5px solid #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0,0.3)
+}

@@ -1,0 +1,125 @@
+.caixa {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	background: #fff;
+	left: 50%;
+	transform: translate(-20%, -25%);
+	padding: 10px;
+	border-radius: 5px;
+	border: 5px solid #e1dbdb;
+	transition: .5s;
+	animation: sur .5s linear;
+}
+
+@keyframes sur {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.mark {
+	position: absolute;
+	top: -30px;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	left: 80%;
+	border: 3px solid #e1dbdb;
+	animation: mark .5s linear;
+}
+
+.mark::before {
+	content: "";
+	position: absolute;
+	top: -30px;
+	left: 0;
+	width: 30px;
+	height: 50px;
+	border-right: 5px solid #e1dbdb;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+.mark::after {
+	content: "";
+	position: absolute;
+	top: -30px;
+	left: -10px;
+	width: 30px;
+	height: 50px;
+	border-right: 5px solid #e1dbdb;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+@keyframes mark {
+	from {
+		opacity: 0;
+		left: 0;
+	}
+
+	to {
+		opacity: 1;
+		left: 80%;
+	}
+}
+
+.check-custom {
+	position: relative;
+	top: 0;
+	left: 20px;
+	width: 40px;
+	height: 40px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	outline: none;
+	transition: .5s;
+}
+
+.check-custom::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 3px solid #e1dbdb;
+	transition: .5s;
+}
+
+.check-custom:checked:before {
+	border-right: none;
+	border-bottom: none;
+	width: 30px;
+	height: 30px;
+	border-color: green;
+	transform: rotateZ(220deg);
+}
+
+label[for="termos"] {
+	position: relative;
+	left: 0px;
+	top: -10px;
+}
+
+label[for="mim"] {
+	position: relative;
+	left: 0px;
+	top: -10px;
+}
+
+span.switch {
+	color: #e1dbdb;
+	font-weight: 700;
+	cursor: pointer;
+	position: relative;
+	left: 20px;
+}
+
+#login {
+	display: none;
+}
